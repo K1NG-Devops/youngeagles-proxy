@@ -4,22 +4,22 @@
       {
         "src": "/(login|register|dashboard|admin)(.*)",
         "headers": { "cache-control": "no-cache" },
-        "dest": "https://youngeagles-angular-app-git-main-k1ng-devops-projects.vercel.app//$1$2"
+        "dest": "https://youngeagles-angular-app-git-main-k1ng-devops-projects.vercel.app/$1$2"
       },
       {
         "src": "/home(.*)",
         "headers": { "cache-control": "no-cache" },
-        "dest": "https://react-frontend-gk2kw8pfs-k1ng-devops-projects.vercel.app//home$1"
+        "dest": "https://react-frontend-gk2kw8pfs-k1ng-devops-projects.vercel.app/home$1"
       },
       {
         "src": "/about(.*)",
         "headers": { "cache-control": "no-cache" },
-        "dest": "https://react-frontend-gk2kw8pfs-k1ng-devops-projects.vercel.app//about$1"
+        "dest": "https://react-frontend-gk2kw8pfs-k1ng-devops-projects.vercel.app/about$1"
       },
       {
         "src": "/(.*)",
         "headers": { "cache-control": "no-cache" },
-        "dest": "https://youngeagles-angular-app-git-main-k1ng-devops-projects.vercel.app//$1"
+        "dest": "https://youngeagles-angular-app-git-main-k1ng-devops-projects.vercel.app/$1"
       }
     ]
   }
