@@ -1,0 +1,26 @@
+{
+    "version": 2,
+    "routes": [
+      {
+        "src": "/(login|register|dashboard|admin)(.*)",
+        "headers": { "cache-control": "no-cache" },
+        "dest": "https://your-angular-app.vercel.app/$1$2"
+      },
+      {
+        "src": "/home(.*)",
+        "headers": { "cache-control": "no-cache" },
+        "dest": "https://your-react-app.vercel.app/home$1"
+      },
+      {
+        "src": "/about(.*)",
+        "headers": { "cache-control": "no-cache" },
+        "dest": "https://your-react-app.vercel.app/about$1"
+      },
+      {
+        "src": "/(.*)",
+        "headers": { "cache-control": "no-cache" },
+        "dest": "https://your-angular-app.vercel.app/$1"
+      }
+    ]
+  }
+  
