@@ -1,25 +1,30 @@
 {
   "version": 2,
-  "routes": [
+  "rewrites": [
     {
-      "src": "/(login|register|projects|admin|parent|child|payment|confirmed)(.*)",
-      "headers": { "cache-control": "no-cache" },
-      "dest": "https://angular-app-teal-theta.vercel.app/$1$2"
+      "source": "/(login|register|projects|admin|parent|child|payment|confirmed)(.*)",
+      "destination": "https://angular-app-puce.vercel.app/$1$2"
     },
     {
-      "src": "/home(.*)",
-      "headers": { "cache-control": "no-cache" },
-      "dest": "https://my-turborepo-react-app-five.vercel.app/home$1"
+      "source": "/home",
+      "destination": "https://react-app-two-olive.vercel.app"
     },
     {
-      "src": "/about(.*)",
-      "headers": { "cache-control": "no-cache" },
-      "dest": "https://my-turborepo-react-app-five.vercel.app/about$1"
+      "source": "/home/:path*",
+      "destination": "https://react-app-two-olive.vercel.app/:path*"
     },
     {
-      "src": "/(.*)",
-      "headers": { "cache-control": "no-cache" },
-      "dest": "https://angular-app-teal-theta.vercel.app/$1"
+      "source": "/about",
+      "destination": "https://react-app-two-olive.vercel.app/about"
+    },
+    {
+      "source": "/about/:path*",
+      "destination": "https://react-app-two-olive.vercel.app/about/:path*"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "https://angular-app-puce.vercel.app/$1"
     }
   ]
 }
+
