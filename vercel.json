@@ -9,7 +9,7 @@
       {
         "src": "/home(.*)",
         "headers": { "cache-control": "no-cache" },
-        "dest": "https://my-turborepo-react-app-five.vercel.app//home$1"
+        "dest": "https://my-turborepo-react-app-five.vercel.app/home$1"
       },
       {
         "src": "/about(.*)",
