@@ -1,26 +1,25 @@
 {
-    "version": 2,
-    "routes": [
-      {
-        "src": "/(landing|login|register|projects|admin|parent|child|payment|confirmed)(.*)",
-        "headers": { "cache-control": "no-cache" },
-        "dest": "https://angular-app-teal-theta.vercel.app/$1$2"
-      },
-      {
-        "src": "/home(.*)",
-        "headers": { "cache-control": "no-cache" },
-        "dest": "https://my-turborepo-react-app-five.vercel.app/home$1"
-      },
-      {
-        "src": "/about(.*)",
-        "headers": { "cache-control": "no-cache" },
-        "dest": "https://my-turborepo-react-app-five.vercel.app//about$1"
-      },
-      {
-        "src": "/(.*)",
-        "headers": { "cache-control": "no-cache" },
-        "dest": "https://youngeagles-angular-app-git-main-k1ng-devops-projects.vercel.app/$1"
-      }
-    ]
-  }
-  
+  "version": 2,
+  "routes": [
+    {
+      "src": "/(landing|login|register|projects|admin|parent|child|payment|confirmed)(.*)",
+      "headers": { "cache-control": "no-cache" },
+      "dest": "https://angular-app-teal-theta.vercel.app/$1$2"
+    },
+    {
+      "src": "/home(.*)",
+      "headers": { "cache-control": "no-cache" },
+      "dest": "https://my-turborepo-react-app-five.vercel.app/home$1"
+    },
+    {
+      "src": "/about(.*)",
+      "headers": { "cache-control": "no-cache" },
+      "dest": "https://my-turborepo-react-app-five.vercel.app/about$1"
+    },
+    {
+      "src": "/(.*)",
+      "headers": { "cache-control": "no-cache" },
+      "dest": "https://youngeagles-angular-app-git-main-k1ng-devops-projects.vercel.app/$1"
+    }
+  ]
+}
