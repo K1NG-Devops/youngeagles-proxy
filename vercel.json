@@ -2,7 +2,7 @@
     "version": 2,
     "routes": [
       {
-        "src": "/(login|register|dashboard|admin)(.*)",
+        "src": "/(landing|login|register|projects|admin|parent|child|payment|confirmed)(.*)",
         "headers": { "cache-control": "no-cache" },
         "dest": "https://angular-app-teal-theta.vercel.app/$1$2"
       },
