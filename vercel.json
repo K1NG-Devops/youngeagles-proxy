@@ -3,27 +3,27 @@
   "rewrites": [
     {
       "source": "/(login|register|projects|admin|parent|child|payment|confirmed)(.*)",
-      "destination": "https://angular-app-puce.vercel.app/$1$2"
+      "destination": "https://angular-app-eight-teal.vercel.app/$2"
     },
     {
       "source": "/home",
-      "destination": "https://react-app-two-olive.vercel.app"
+      "destination": "https://react-app-rho-ruddy.vercel.app/"
     },
     {
       "source": "/home/:path*",
-      "destination": "https://react-app-two-olive.vercel.app/:path*"
+      "destination": "https://react-app-rho-ruddy.vercel.app/:path*"
     },
     {
       "source": "/about",
-      "destination": "https://react-app-two-olive.vercel.app/about"
+      "destination": "https://react-app-rho-ruddy.vercel.app/about"
     },
     {
       "source": "/about/:path*",
-      "destination": "https://react-app-two-olive.vercel.app/about/:path*"
+      "destination": "https://react-app-rho-ruddy.vercel.app/:path*"
     },
     {
       "source": "/(.*)",
-      "destination": "https://angular-app-puce.vercel.app/$1"
+      "destination": "https://angular-app-eight-teal.vercel.app/"
     }
   ]
 }
