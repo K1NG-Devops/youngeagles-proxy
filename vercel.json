@@ -3,28 +3,35 @@
   "rewrites": [
     {
       "source": "/(login|register|projects|admin|parent|child|payment|confirmed)(.*)",
-      "destination": "https://angular-app-eight-teal.vercel.app/$2"
+      "destination": "https://angular-app-alpha-gilt.vercel.app/index.html"
     },
     {
-      "source": "/home",
-      "destination": "https://react-app-rho-ruddy.vercel.app/"
+      "source": "/programs",
+      "destination": "https://react-app-iota-nine.vercel.app/index.html"
     },
     {
-      "source": "/home/:path*",
-      "destination": "https://react-app-rho-ruddy.vercel.app/:path*"
+      "source": "/programs/:path*",
+      "destination": "https://react-app-iota-nine.vercel.app/index.html"
     },
     {
       "source": "/about",
-      "destination": "https://react-app-rho-ruddy.vercel.app/about"
+      "destination": "https://react-app-iota-nine.vercel.app/index.html"
     },
     {
       "source": "/about/:path*",
-      "destination": "https://react-app-rho-ruddy.vercel.app/:path*"
+      "destination": "https://react-app-iota-nine.vercel.app/index.html"
+    },
+    {
+      "source": "/home/:path*",
+      "destination": "https://react-app-iota-nine.vercel.app/index.html"
+    },
+    {
+      "source": "/home",
+      "destination": "https://react-app-iota-nine.vercel.app/index.html"
     },
     {
       "source": "/(.*)",
-      "destination": "https://angular-app-eight-teal.vercel.app/"
+      "destination": "https://angular-app-alpha-gilt.vercel.app/index.html"
     }
   ]
 }
-
