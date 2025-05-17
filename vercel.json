@@ -1,21 +1,25 @@
 {
   "version": 2,
-  "rewrites": [
+  "redirects": [
     {
       "source": "/",
-      "destination": "https://angular-app-alpha-gilt.vercel.app/"
+      "destination": "https://angular-app-alpha-gilt.vercel.app/",
+      "permanent": true
     },
     {
       "source": "/projects/:path*",
-      "destination": "https://angular-app-alpha-gilt.vercel.app/projects/:path*"
+      "destination": "https://angular-app-alpha-gilt.vercel.app/projects/:path*",
+      "permanent": true
     },
     {
       "source": "/dashboard/:path*",
-      "destination": "https://react-app-iota-nine.vercel.app/dashboard/:path*"
+      "destination": "https://react-app-iota-nine.vercel.app/$1",
+      "permanent": true
     },
     {
       "source": "/(.*)",
-      "destination": "https://react-app-iota-nine.vercel.app/$1"
+      "destination": "https://react-app-iota-nine.vercel.app/$1",
+      "permanent": true
     }
   ]
 }
