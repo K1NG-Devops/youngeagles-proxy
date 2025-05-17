@@ -2,36 +2,20 @@
   "version": 2,
   "rewrites": [
     {
-      "source": "/(login|register|projects|admin|parent|child|payment|confirmed)(.*)",
-      "destination": "https://angular-app-alpha-gilt.vercel.app/index.html"
+      "source": "/",
+      "destination": "https://angular-app-alpha-gilt.vercel.app/"
     },
     {
-      "source": "/programs",
-      "destination": "https://react-app-iota-nine.vercel.app/index.html"
+      "source": "/projects/:path*",
+      "destination": "https://angular-app-alpha-gilt.vercel.app/projects/:path*"
     },
     {
-      "source": "/programs/:path*",
-      "destination": "https://react-app-iota-nine.vercel.app/index.html"
-    },
-    {
-      "source": "/about",
-      "destination": "https://react-app-iota-nine.vercel.app/index.html"
-    },
-    {
-      "source": "/about/:path*",
-      "destination": "https://react-app-iota-nine.vercel.app/index.html"
-    },
-    {
-      "source": "/home/:path*",
-      "destination": "https://react-app-iota-nine.vercel.app/index.html"
-    },
-    {
-      "source": "/home",
-      "destination": "https://react-app-iota-nine.vercel.app/index.html"
+      "source": "/dashboard/:path*",
+      "destination": "https://react-app-iota-nine.vercel.app/dashboard/:path*"
     },
     {
       "source": "/(.*)",
-      "destination": "https://angular-app-alpha-gilt.vercel.app/index.html"
+      "destination": "https://react-app-iota-nine.vercel.app/$1"
     }
   ]
 }
