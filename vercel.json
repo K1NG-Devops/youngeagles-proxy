@@ -1,25 +1,203 @@
 {
   "version": 2,
-  "redirects": [
+  "rewrites": [
+    {
+      "source": "/api/(.*)",
+      "destination": "https://youngeagles-api.railway.app/api/$1"
+    },
+    {
+      "source": "/projects",
+      "destination": "https://angular-app-alpha-gilt.vercel.app/projects"
+    },
+    {
+      "source": "/projects/(.*)",
+      "destination": "https://angular-app-alpha-gilt.vercel.app/projects/$1"
+    },
+    {
+      "source": "/dashboard",
+      "destination": "https://react-app-iota-nine.vercel.app/dashboard"
+    },
+    {
+      "source": "/dashboard/(.*)",
+      "destination": "https://react-app-iota-nine.vercel.app/dashboard/$1"
+    },
+    {
+      "source": "/login",
+      "destination": "https://react-app-iota-nine.vercel.app/login"
+    },
+    {
+      "source": "/register",
+      "destination": "https://react-app-iota-nine.vercel.app/register"
+    },
+    {
+      "source": "/teacher/(.*)",
+      "destination": "https://react-app-iota-nine.vercel.app/teacher/$1"
+    },
+    {
+      "source": "/admin/(.*)",
+      "destination": "https://react-app-iota-nine.vercel.app/admin/$1"
+    },
+    {
+      "source": "/student/(.*)",
+      "destination": "https://react-app-iota-nine.vercel.app/student/$1"
+    },
+    {
+      "source": "/notifications",
+      "destination": "https://react-app-iota-nine.vercel.app/notifications"
+    },
+    {
+      "source": "/year-planner",
+      "destination": "https://react-app-iota-nine.vercel.app/year-planner"
+    },
+    {
+      "source": "/homework/(.*)",
+      "destination": "https://react-app-iota-nine.vercel.app/homework/$1"
+    },
+    {
+      "source": "/submit-work",
+      "destination": "https://react-app-iota-nine.vercel.app/submit-work"
+    },
+    {
+      "source": "/lessons",
+      "destination": "https://react-app-iota-nine.vercel.app/lessons"
+    },
+    {
+      "source": "/resources",
+      "destination": "https://react-app-iota-nine.vercel.app/resources"
+    },
+    {
+      "source": "/videos",
+      "destination": "https://react-app-iota-nine.vercel.app/videos"
+    },
+    {
+      "source": "/popupload",
+      "destination": "https://react-app-iota-nine.vercel.app/popupload"
+    },
+    {
+      "source": "/register-child",
+      "destination": "https://react-app-iota-nine.vercel.app/register-child"
+    },
+    {
+      "source": "/view-attendance",
+      "destination": "https://react-app-iota-nine.vercel.app/view-attendance"
+    },
+    {
+      "source": "/teacher-children-list",
+      "destination": "https://react-app-iota-nine.vercel.app/teacher-children-list"
+    },
+    {
+      "source": "/teacher-dashboard",
+      "destination": "https://react-app-iota-nine.vercel.app/teacher-dashboard"
+    },
+    {
+      "source": "/home",
+      "destination": "https://react-app-iota-nine.vercel.app/home"
+    },
+    {
+      "source": "/programs",
+      "destination": "https://react-app-iota-nine.vercel.app/programs"
+    },
+    {
+      "source": "/assets/(.*)",
+      "destination": "https://react-app-iota-nine.vercel.app/assets/$1"
+    },
+    {
+      "source": "/pwa-(.*)",
+      "destination": "https://react-app-iota-nine.vercel.app/pwa-$1"
+    },
+    {
+      "source": "/manifest.webmanifest",
+      "destination": "https://react-app-iota-nine.vercel.app/manifest.webmanifest"
+    },
+    {
+      "source": "/sw.js",
+      "destination": "https://react-app-iota-nine.vercel.app/sw.js"
+    },
+    {
+      "source": "/workbox-(.*).js",
+      "destination": "https://react-app-iota-nine.vercel.app/workbox-$1.js"
+    },
+    {
+      "source": "/registerSW.js",
+      "destination": "https://react-app-iota-nine.vercel.app/registerSW.js"
+    },
+    {
+      "source": "/favicon.ico",
+      "destination": "https://react-app-iota-nine.vercel.app/favicon.ico"
+    },
+    {
+      "source": "/apple-touch-icon.png",
+      "destination": "https://react-app-iota-nine.vercel.app/apple-touch-icon.png"
+    },
+    {
+      "source": "/firebase-messaging-sw.js",
+      "destination": "https://react-app-iota-nine.vercel.app/firebase-messaging-sw.js"
+    },
     {
       "source": "/",
-      "destination": "https://angular-app-alpha-gilt.vercel.app/",
-      "permanent": true
-    },
-    {
-      "source": "/projects/:path*",
-      "destination": "https://angular-app-alpha-gilt.vercel.app/projects/:path*",
-      "permanent": true
-    },
-    {
-      "source": "/dashboard/:path*",
-      "destination": "https://react-app-iota-nine.vercel.app/$1",
-      "permanent": true
+      "destination": "https://angular-app-alpha-gilt.vercel.app/"
     },
     {
       "source": "/(.*)",
-      "destination": "https://react-app-iota-nine.vercel.app/$1",
-      "permanent": true
+      "destination": "https://angular-app-alpha-gilt.vercel.app/$1"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "X-Frame-Options",
+          "value": "DENY"
+        },
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "X-XSS-Protection",
+          "value": "1; mode=block"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        }
+      ]
+    },
+    {
+      "source": "/sw.js",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, no-store, must-revalidate"
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/javascript"
+        }
+      ]
+    },
+    {
+      "source": "/manifest.webmanifest",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "application/manifest+json"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=86400"
+        }
+      ]
+    },
+    {
+      "source": "/assets/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
     }
   ]
 }
